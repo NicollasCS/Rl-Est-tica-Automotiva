@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RL Estética Automotiva</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #0a0a0a;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  width: 100%;
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(10px);
+  padding: 15px;
+  text-align: center;
+  z-index: 1000;
+}
+
+header h1 {
+  color: #ffd700;
+  margin: 0;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero div {
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero h2 {
+  font-size: 50px;
+}
+
+.hero p {
+  font-size: 20px;
+}
+
+/* BUTTON */
+.btn {
+  margin-top: 20px;
+  padding: 15px 30px;
+  background: #ffd700;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+/* SECTION */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  color: #ffd700;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #111;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  border: 1px solid #ffd700;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: white;
+  font-size: 30px;
+  padding: 15px 18px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 0 10px black;
+  transition: 0.3s;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.2);
+}
+
+/* FOOTER */
+footer {
+  padding: 20px;
+  background: black;
+  text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>RL ESTÉTICA AUTOMOTIVA</h1>
+</header>
+
+<section class="hero">
+  <div>
+    <h2>Seu carro com brilho de novo ✨</h2>
+    <p>Palhoça - Barra do Aririú</p>
+    <a href="https://wa.me/554896187647" target="_blank">
+      <button class="btn">Agendar Agora</button>
+    </a>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Serviços</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Lavagem Completa</h3>
+      <p>Detalhamento interno e externo</p>
+    </div>
+    <div class="card">
+      <h3>Polimento Técnico</h3>
+      <p>Remove riscos e renova o brilho</p>
+    </div>
+    <div class="card">
+      <h3>Higienização</h3>
+      <p>Limpeza profunda e eliminação de odores</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Sobre Nós</h2>
+  <p>Na RL Estética Automotiva, cuidamos do seu carro com atenção aos mínimos detalhes, trazendo brilho, proteção e valorização.</p>
+</section>
+
+<footer>
+  <p>© 2026 RL Estética Automotiva - Palhoça</p>
+</footer>
+
+<!-- BOTÃO FLUTUANTE -->
+<a href="https://wa.me/554896187647" class="whatsapp-float" target="_blank">
+  💬
+</a>
+
+</body>
+</html>
